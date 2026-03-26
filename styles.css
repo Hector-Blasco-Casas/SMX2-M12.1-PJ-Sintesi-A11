@@ -1,0 +1,136 @@
+/* Hola, Alberto y Agnès, sé que hay otras formas de importar letras, pero esta es la única que sé :) */
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+* {
+  cursor: url("./img/cursor.cur"), auto;
+}
+
+body {
+    margin: 0;
+    background-image: url("img/kanto-map.jpeg"); /* La imagen de fondo que establecemos */
+    background-size: cover; /* El fondo cubre toda la pantalla */
+    background-position: center; /* Centramos el fondo */
+    background-repeat: no-repeat; /* Hacemos que no se repita la imagen con tal de rellenar el fondo */
+    font-family: "Jersey 25", sans-serif; /* Tipo de letra */
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 4px black; /* Sombra del texto */
+}
+
+h1 {
+  display: inline-block; /* Hacemos que el título sea un "bloque" por así decirlo */
+  background-color: rgb(0,0,0,0.5); /* Color de fondo del título */
+  padding: 10px 20px; /* Relleno del título */
+  justify-content: center; /* Centra el contenido */
+  text-align: center; /* Centra el texto */
+  margin-top: 20px; /* Margen superior del título */
+  font-size: 70px; /* Tamaño de la fuente del título */
+  border-radius: 10px; /* Bordes redondeados del título */
+  position: absolute; /* Posición absoluta del título */
+  left: 50%; /* Posición izquierda del título */
+  top: 50%; /* Posición superior del título */
+  transform: translateX(-50%); /* Transformación del título */
+  top:20px; /* Posición superior del título */
+}
+
+.contenedor {
+  display: grid; /* Hacemos que el contenedor sea como una cuadrícula */
+  justify-content: flex-start; /* Alinea a la izquierda */
+  padding: 40px; /* Relleno del contenedor */
+  height: 100%; /* Altura del contenedor */
+  position: absolute; /* Posición absoluta del contenedor */
+  top: 20%; /* Posición superior del contenedor */
+}
+
+.columna-izquierda {
+  display: flex; /* Hacemos que la columna izquierda sea un flexbox */
+  flex-direction: column; /* Hacemos que la columna izquierda sea vertical */
+  align-items: center; /* Centra la imagen y la lista entre sí */
+}
+
+.pokedex {
+  width: 300px; /* Ancho de la imagen */
+  height: auto; /* Altura automática */
+  margin-bottom: 20px; /* Margen inferior de la imagen */
+}
+
+.lista-pokemon {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el relleno de la lista */
+  margin: 0; /* Elimina el margen de la lista */
+  width: 100%; /* Ancho de la lista */
+  font-size: 18px; /* Tamaño de la fuente de la lista */
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-size: 30px; /* Tamaño de la fuente de la lista */
+}
+
+.lista-pokemon li {
+  margin: 8px 0; /* Margen de la lista */
+}
+
+.lista-pokemon a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.lista-pokemon a:hover {
+    color: #ffeb3b;        /* Amarillo tipo Pokémon */
+    text-decoration: underline; /* Subrayado */
+}
+
+@media (min-width: 900px) {
+    body {
+        background-attachment: scroll; /* Evita bugs en móvil */
+        background-size: cover; /* Asegura que cubra */
+        min-height: 100vh; /* Altura mínima del body */
+    }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .titulo {
+    font-size: 26px;
+  }
+
+  .pokedex {
+    width: 220px;
+  }
+
+  .lista-pokemon {
+    font-size: 14px;
+  }
+
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 20px;
+  }
+
+  .contenedor {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .pokedex {
+    width: 160px;
+  }
+
+  .lista-pokemon {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
