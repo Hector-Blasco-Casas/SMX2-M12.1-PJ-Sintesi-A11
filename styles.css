@@ -1,9 +1,9 @@
 /* Hola, Alberto y Agnès, sé que hay otras formas de importar letras, pero esta es la única que sé :) */
 
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap'); /* Importamos la fuente de Google Fonts */
 
 * {
-  cursor: url("./img/cursor.cur"), auto;
+  cursor: url("./img/cursor.cur"), auto; /* Establecemos el cursor ese guapo de Pokémon que hay */
 }
 
 body {

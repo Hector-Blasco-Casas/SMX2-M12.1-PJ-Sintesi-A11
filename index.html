@@ -1,22 +1,23 @@
 <!DOCTYPE html>
+
+<!-- Héctor Blasco Casas, SMX2 -->
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex por Héctor Blasco</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <title>Pokédex por Héctor Blasco</title> <!-- Establecemos el título para la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazamos la hoja de estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Enlazamos la fuente de Google Fonts (pegado desde Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Enlazamos la fuente de Google Fonts (pegado desde Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet"> <!-- Enlazamos la fuente de Google Fonts (pegado desde Google Fonts) -->
 </head>
 <body>
-    <h1 class="titulo">Pokédex</h1>
-    <div class="contenedor">
-        <div class="columna-izquierda">
-
-            <a href="https://www.pokemon.com/es/pokedex"><img src="img/pokedex.png" alt="Una pokedex" class="pokedex"></a>
-
-            <ul class="lista-pokemon">
+    <h1 class="titulo">Pokédex</h1> <!-- Título que hay en grande en el centro -->
+    <div class="contenedor"> <!-- Contenedor que se dividirá en 3 para hacer la columna de la izquierda -->
+        <div class="columna-izquierda"> <!-- Columna izquierda -->
+            <a href="https://www.pokemon.com/es/pokedex"><img src="img/pokedex.png" alt="Una pokedex" class="pokedex"></a> <!-- Imagen de la pokedex -->
+            <ul class="lista-pokemon"> <!-- Creamos la lista de Pokémons -->
                 <li><a href="pokemons/cyndaquil/cyndaquil.html" target="_blank">Cyndaquil</a></li>
                 <li><a href="pokemons/gengar/gengar.html" target="_blank">Gengar</a></li>
                 <li><a href="pokemons/mew/mew.html" target="_blank">Mew</a></li>
@@ -24,8 +25,8 @@
             </ul>
         </div>
     </div>
-    <audio id="musica-fondo" src="./sound/musica-fondo.mp3" autoplay loop></audio>
+    <audio id="musica-fondo" src="./sound/musica-fondo.mp3" autoplay loop></audio> <!-- La música de fondo -->
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Enlazamos el script -->
 </body>
 </html>
